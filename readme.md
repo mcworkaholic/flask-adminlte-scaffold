@@ -1,6 +1,6 @@
 # flask-adminlte-handler
 ## Introduction
-flask-adminlte-handler is a Python based WEB Backend management system scaffolding，The goal is to use a very small amount of code，quickly build small WEB applications, Do not try this on medium to large projects.
+flask-adminlte-handler is a Python based WEB Backend management system scaffolding，The goal is to use a very small amount of code and to quickly build small WEB applications. Do not try this on medium to large projects.
 
 1. Use the more traditional heavy back-end + light front-end approach to reduce the overall code volume.
 2. Web framework --> Flask, default Jinja template
