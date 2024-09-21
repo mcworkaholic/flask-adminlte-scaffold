@@ -1,23 +1,23 @@
 # flask-adminlte-handler
-## 简介
+## Introduction
 flask-adminlte-handler是一个Python环境下的WEB后台管理系统脚手架，目标是用极少量的代码，快速构建小型WEB应用。请勿在大中型项目中进行尝试。  
 
-1. 使用较传统的重后端+轻前端的方式，降低总体代码量
+1. Use the more traditional heavy back-end + light front-end approach to reduce the overall code volume.
 2. Web框架使用Flask，默认Jinja模版
 3. ORM框架使用Peewee
 4. 前端套用基于BootStrap的AdminLTE模板
 
-## 系统截图
-- 登录页  
+## System Screenshot
+- Login Page  
 ![](http://oh0ra6igz.bkt.clouddn.com/0ot1s.jpg)
 
-- 主页  
+- Home Page  
 ![](http://oh0ra6igz.bkt.clouddn.com/644d6.jpg)
 
-- 编辑界面  
+- Editing Interface  
 ![](http://oh0ra6igz.bkt.clouddn.com/fojv1.jpg)  
 
-- 查询界面  
+- Query interface  
 ![](http://oh0ra6igz.bkt.clouddn.com/vvelb.jpg)
 
 
