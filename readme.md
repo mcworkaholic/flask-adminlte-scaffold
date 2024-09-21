@@ -21,7 +21,7 @@ flask-adminlte-handler是一个Python环境下的WEB后台管理系统脚手架�
 ![](http://oh0ra6igz.bkt.clouddn.com/vvelb.jpg)
 
 
-## 第三方依赖
+## third party dependencies
 - peewee
 - pymysql
 - flask
@@ -30,21 +30,21 @@ flask-adminlte-handler是一个Python环境下的WEB后台管理系统脚手架�
 - flask-login
 
 
-## 环境配置
-### venv虚拟环境安装配置
+## Environment configuration
+### venv Virtual environment installation and configuration
 ```
 sudo pip3 install virtualenv
 virtualenv venv
 . venv/bin/activate
 ```
 
-### 第三方依赖安装
+### Third-party dependency installation
 ```
 pip3 install -r requirements.txt
 
 ```
-### 系统参数配置
-1. 编辑`config.py`， 修改SECRET_KEY及MySQL数据库相关参数
+### System parameter configuration
+1. edit `config.py`， Revise SECRET_KEY and MySQL Database related parameters
 ```
 SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
 DB_HOST = '127.0.0.1'
@@ -53,42 +53,42 @@ DB_PASSWD = 'foobar'
 DB_DATABASE = 'foobar'
 ```
 
-2. 编辑log-app.conf，修改日志路径
+2. edit log-app.conf，Revise Log path
 ```
 args=('/path/to/log/flask-rest-sample.log','a','utf8')
 ```
 
-### 数据库初始化
-1. 自动建表
-直接运行`python3 models.py`
+### Database initialization
+1. Automatic table creation
+Run directly `python3 models.py`
 
-2. 插入管理员用户（默认admin/admin)
+2. Insert admin user（default admin/admin)
 ```
 INSERT INTO `user` (`id`, `username`, `password`, `fullname`, `email`, `phone`, `status`)
 VALUES
-	(1, 'admin', 'pbkdf2:sha1:1000$Km1vdx3W$9aa07d3b79ab88aae53e45d26d0d4d4e097a6cd3', '管理员', 'admin@admin.com', '18612341234', 1);
+	(1, 'admin', 'pbkdf2:sha1:1000$Km1vdx3W$9aa07d3b79ab88aae53e45d26d0d4d4e097a6cd3', 'administrator', 'admin@admin.com', '18612341234', 1);
 ```
 
-### 启动应用
+### Start application
 ```
 nohup ./manage.py runserver 2>&1 &
-或
-./run_app_dev.py (仅限测试)
+or
+./run_app_dev.py (Testing only)
 ```
 
 
-## 项目目录结构
+## Project directory structure
 ![](http://oh0ra6igz.bkt.clouddn.com/963uh.jpg)  
-- /app/auth  用户认证相关代码
-- /app/main  主要功能点相关代码
-- /app/static  JS、CSS等静态文件
-- /app/template  页面模版
-- /app/models.py  Peewee模型
-- /app/utils.py  工具模块
-- /conf  系统参数及日志配置
+- /app/auth  User authentication related codes
+- /app/main  Code related to main function points
+- /app/static  JS、CSS Wait for static files
+- /app/template  Page template
+- /app/models.py  Peewee Model
+- /app/utils.py  tool module
+- /conf  System parameters and log configuration
 
 
-## 相关学习文档
+## Related learning documents
 - [http://flask.pocoo.org](http://flask.pocoo.org)
 - [https://flask-login.readthedocs.io](https://flask-login.readthedocs.io)
 - [https://flask-script.readthedocs.io](https://flask-script.readthedocs.io)
