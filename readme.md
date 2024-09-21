@@ -54,14 +54,14 @@ pip3 install -r requirements.txt
 
 #### venv Virtual environment installation and configuration
 ```
-sudo pip3 install virtualenv
-virtualenv venv
-. venv/bin/activate
+pyenv local 3.11.0
+python -m venv .venv
+.\.venv\Scripts\activate
 ```
 
 #### Third-party dependency installation
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 ```
 
