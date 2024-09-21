@@ -1,11 +1,11 @@
 # flask-adminlte-handler
 ## Introduction
-flask-adminlte-handler是一个Python环境下的WEB后台管理系统脚手架，目标是用极少量的代码，快速构建小型WEB应用。请勿在大中型项目中进行尝试。  
+flask-adminlte-handler is a Python based WEB Backend management system scaffolding，The goal is to use a very small amount of code，quickly build small WEB applications, Do not try this on medium to large projects.
 
 1. Use the more traditional heavy back-end + light front-end approach to reduce the overall code volume.
-2. Web框架使用Flask，默认Jinja模版
-3. ORM框架使用Peewee
-4. 前端套用基于BootStrap的AdminLTE模板
+2. Web framework --> Flask, default Jinja template
+3. ORM --> Peewee
+4. The front-end application is based on the BootStrap template of AdminLTE
 
 ## System Screenshot
 - Login Page  
