@@ -31,18 +31,40 @@ flask-adminlte-handler is a Python based WEB Backend management system scaffoldi
 
 
 ## Environment configuration
-### venv Virtual environment installation and configuration
+### Linux
+
+<br/>
+
+#### venv Virtual environment installation and configuration
 ```
 sudo pip3 install virtualenv
 virtualenv venv
 . venv/bin/activate
 ```
 
-### Third-party dependency installation
+#### Third-party dependency installation
 ```
 pip3 install -r requirements.txt
 
 ```
+
+### Windows
+
+<br/>
+
+#### venv Virtual environment installation and configuration
+```
+sudo pip3 install virtualenv
+virtualenv venv
+. venv/bin/activate
+```
+
+#### Third-party dependency installation
+```
+pip3 install -r requirements.txt
+
+```
+
 ### System parameter configuration
 1. edit `config.py`， Revise SECRET_KEY and MySQL Database related parameters
 ```
